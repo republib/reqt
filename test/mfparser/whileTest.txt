@@ -1,0 +1,21 @@
+Int a = 20;
+while 3 < 5 do
+ a = 7
+od
+= <test> (module) parent: $global
+== Variables:
+varDef Int a id: 2 namedValue: 1 value: 3 succ: 4 <test>:1:4
+	namedValue a id: 1 attr: 0x0 <test>:1:4
+	const id: 3 value: 20 <test>:1:8
+== Body:
+varDef Int a id: 2 namedValue: 1 value: 3 succ: 4 <test>:1:4
+	namedValue a id: 1 attr: 0x0 <test>:1:4
+	const id: 3 value: 20 <test>:1:8
+while id: 4 condition: 6 body: 11 succ: 0 <test>:1:12
+	BinOp id: 6 op: < (35) left: 5 right: 7 <test>:2:8
+		const id: 5 value: 3 <test>:2:6
+		const id: 7 value: 5 <test>:2:10
+	Expr id: 11 expr: 9 succ: 0 <test>:3:3
+		BinOp id: 9 op: = (1) left: 8 right: 10 <test>:3:3
+			namedValue a id: 8 attr: 0x0 <test>:3:3
+			const id: 10 value: 7 <test>:3:5

@@ -1,0 +1,32 @@
+func Int max(Int a, Int b):
+ Int rc = a;
+if a < b then rc = b; fi
+rc
+endf
+func Int max(const Int a, Int b, Int c):
+max(a, max(b, c))
+endf
+= <test> (module) parent: $global
+== Methods:
+Method <NoneType> max() id: 21 parent: <test> args: 24 body: 40 <test>:5:5
+	Expr id: 24 expr: 23 succ: 27 
+		varDef Int a id: 23 namedValue: 22 value: 0 succ: 0 <test>:6:23
+			namedValue a id: 22 attr: 0x22 <test>:6:23
+	Expr id: 40 expr: 31 succ: 0 <test>:7:3
+		call max Id: 31 args: 33 parent: 0 succ: 0 <test>:7:3
+			arg 1 id: 33 expr: 32 succ: 39
+				namedValue a id: 32 attr: 0x0 <test>:7:5
+			arg 2 id: 39 expr: 34 succ: 0
+				call max Id: 34 args: 36 parent: 0 succ: 0 <test>:7:10
+					arg 1 id: 36 expr: 35 succ: 38
+						namedValue b id: 35 attr: 0x0 <test>:7:12
+					arg 2 id: 38 expr: 37 succ: 0
+						namedValue c id: 37 attr: 0x0 <test>:7:15
+	= <test>.max (method) parent: <test>
+	== Variables:
+	varDef Int a id: 23 namedValue: 22 value: 0 succ: 0 <test>:6:23
+		namedValue a id: 22 attr: 0x22 <test>:6:23
+	varDef Int b id: 26 namedValue: 25 value: 0 succ: 0 <test>:6:30
+		namedValue b id: 25 attr: 0x20 <test>:6:30
+	varDef Int c id: 29 namedValue: 28 value: 0 succ: 0 <test>:6:37
+		namedValue c id: 28 attr: 0x20 <test>:6:37

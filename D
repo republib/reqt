@@ -1,0 +1,7 @@
+#! /bin/bash
+
+ZIP=rpldoc.zip
+rm -Rf $ZIP doc/
+doxygen
+zip -qr9 $ZIP doc/
+ls -ld $ZIP

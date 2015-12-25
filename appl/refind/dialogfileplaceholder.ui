@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogFilePlaceHolders</class>
+ <widget class="QDialog" name="DialogFilePlaceHolders">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>File Specific Placeholders</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>190</number>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <row>
+      <property name="text">
+       <string notr="true">New Row</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>New Row</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>New Row</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>New Row</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>New Row</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>New Row</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>New Row</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>New Row</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>New Row</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>New Row</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>New Row</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Placeholder</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Example</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Description</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string notr="true">${base}</string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string notr="true">/home/bob</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string>base directory</string>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string notr="true">${full}</string>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string notr="true">/home/bob/doc/intro.txt</string>
+      </property>
+     </item>
+     <item row="1" column="2">
+      <property name="text">
+       <string>filename with absolute path</string>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string notr="true">${path}</string>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string notr="true">/home/bob/doc</string>
+      </property>
+     </item>
+     <item row="2" column="2">
+      <property name="text">
+       <string>path without node</string>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string notr="true">${node}</string>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string notr="true">intro.txt</string>
+      </property>
+     </item>
+     <item row="3" column="2">
+      <property name="text">
+       <string>filename with extension</string>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string notr="true">${name}</string>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string notr="true">intro</string>
+      </property>
+     </item>
+     <item row="4" column="2">
+      <property name="text">
+       <string>filename without extension</string>
+      </property>
+     </item>
+     <item row="5" column="0">
+      <property name="text">
+       <string notr="true">${ext}</string>
+      </property>
+     </item>
+     <item row="5" column="1">
+      <property name="text">
+       <string notr="true">.txt</string>
+      </property>
+     </item>
+     <item row="5" column="2">
+      <property name="text">
+       <string>extension</string>
+      </property>
+     </item>
+     <item row="6" column="0">
+      <property name="text">
+       <string notr="true">${modified}</string>
+      </property>
+     </item>
+     <item row="6" column="1">
+      <property name="text">
+       <string notr="true">2015.04.03/08:07:14</string>
+      </property>
+     </item>
+     <item row="6" column="2">
+      <property name="text">
+       <string>date/time of the last change</string>
+      </property>
+     </item>
+     <item row="7" column="0">
+      <property name="text">
+       <string notr="true">${size}</string>
+      </property>
+     </item>
+     <item row="7" column="1">
+      <property name="text">
+       <string notr="true">0.001223</string>
+      </property>
+     </item>
+     <item row="7" column="2">
+      <property name="text">
+       <string>file length in megabyte</string>
+      </property>
+     </item>
+     <item row="8" column="0">
+      <property name="text">
+       <string notr="true">${type}</string>
+      </property>
+     </item>
+     <item row="8" column="1">
+      <property name="text">
+       <string notr="true">file</string>
+      </property>
+     </item>
+     <item row="8" column="2">
+      <property name="text">
+       <string>'file', 'dir', 'link (file)', 'link (dir)'</string>
+      </property>
+     </item>
+     <item row="9" column="0">
+      <property name="text">
+       <string notr="true">\t</string>
+      </property>
+     </item>
+     <item row="9" column="1">
+      <property name="text">
+       <string notr="true">\t</string>
+      </property>
+     </item>
+     <item row="9" column="2">
+      <property name="text">
+       <string>tabulator</string>
+      </property>
+     </item>
+     <item row="10" column="0">
+      <property name="text">
+       <string notr="true">\n</string>
+      </property>
+     </item>
+     <item row="10" column="1">
+      <property name="text">
+       <string notr="true">\n</string>
+      </property>
+     </item>
+     <item row="10" column="2">
+      <property name="text">
+       <string>newline</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DialogFilePlaceHolders</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DialogFilePlaceHolders</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,11 @@
+func Float pi: 3.1415; endf func Str delim(): '/' endf;
+= <test> (module) parent: $global
+== Methods:
+Method <NoneType> delim() id: 4 parent: <test> args: 0 body: 6 <test>:1:28
+	Expr id: 6 expr: 5 succ: 0 <test>:1:46
+		const id: 5 value: '/' <test>:1:46
+	= <test>.delim (method) parent: <test>
+Method <NoneType> pi() id: 1 parent: <test> args: 0 body: 3 <test>:0:0
+	Expr id: 3 expr: 2 succ: 0 <test>:1:15
+		const id: 2 value: 3.141500 <test>:1:15
+	= <test>.pi (method) parent: <test>

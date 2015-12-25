@@ -1,0 +1,16 @@
+*-conflict_*
+*~
+*.pro.user
+doc/
+*.log
+*.o
+.cproject
+.project
+*.pro.user.*
+static/
+rpldoc.zip
+build/
+appl/build-reidos-Desktop-Debug/
+.metadata
+2github
+

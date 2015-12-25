@@ -1,0 +1,24 @@
+Str x1 = "x1 123456789 123456789 123456789 123456789 123456789";
+Str x2 = "x2 123456789 123456789 123456789 123456789 123456789";
+Str x3 = "x3 123456789 123456789 123456789 123456789 123456789";
+= test/rplmfparser/string1.mf (module) parent: $global
+== Variables:
+varDef Str x1 id: 2 namedValue: 1 value: 3 succ: 5 test/rplmfparser/string1.mf:1:4
+	namedValue x1 id: 1 attr: 0x0 test/rplmfparser/string1.mf:1:4
+	const id: 3 value: 'x1 123456789 123456789 123456789 123456789 123456789' test/rplmfparser/string1.mf:1:9
+varDef Str x2 id: 5 namedValue: 4 value: 6 succ: 8 test/rplmfparser/string1.mf:3:4
+	namedValue x2 id: 4 attr: 0x0 test/rplmfparser/string1.mf:3:4
+	const id: 6 value: 'x2 123456789 123456789 123456789 123456789 123456789' test/rplmfparser/string1.mf:3:9
+varDef Str x3 id: 8 namedValue: 7 value: 9 succ: 0 test/rplmfparser/string1.mf:5:4
+	namedValue x3 id: 7 attr: 0x0 test/rplmfparser/string1.mf:5:4
+	const id: 9 value: 'x3 123456789 123456789 123456789 123456789 123456789' test/rplmfparser/string1.mf:5:9
+== Body:
+varDef Str x1 id: 2 namedValue: 1 value: 3 succ: 5 test/rplmfparser/string1.mf:1:4
+	namedValue x1 id: 1 attr: 0x0 test/rplmfparser/string1.mf:1:4
+	const id: 3 value: 'x1 123456789 123456789 123456789 123456789 123456789' test/rplmfparser/string1.mf:1:9
+varDef Str x2 id: 5 namedValue: 4 value: 6 succ: 8 test/rplmfparser/string1.mf:3:4
+	namedValue x2 id: 4 attr: 0x0 test/rplmfparser/string1.mf:3:4
+	const id: 6 value: 'x2 123456789 123456789 123456789 123456789 123456789' test/rplmfparser/string1.mf:3:9
+varDef Str x3 id: 8 namedValue: 7 value: 9 succ: 0 test/rplmfparser/string1.mf:5:4
+	namedValue x3 id: 7 attr: 0x0 test/rplmfparser/string1.mf:5:4
+	const id: 9 value: 'x3 123456789 123456789 123456789 123456789 123456789' test/rplmfparser/string1.mf:5:9

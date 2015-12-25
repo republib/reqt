@@ -1,0 +1,59 @@
+func Int max(const Int a, Int b, Int c):
+func Int max(Int a, Int b):
+ Int rc = a;
+if a < b then rc = b; fi
+rc
+endf
+max(a, max(b, c))
+endf
+= <test> (module) parent: $global
+== Methods:
+Method <NoneType> max() id: 1 parent: <test> args: 4 body: 40 <test>:0:4
+	Expr id: 4 expr: 3 succ: 7 
+		varDef Int a id: 3 namedValue: 2 value: 0 succ: 0 <test>:1:23
+			namedValue a id: 2 attr: 0x22 <test>:1:23
+	Expr id: 40 expr: 31 succ: 0 <test>:7:3
+		call max Id: 31 args: 33 parent: 0 succ: 0 <test>:7:3
+			arg 1 id: 33 expr: 32 succ: 39
+				namedValue a id: 32 attr: 0x0 <test>:7:5
+			arg 2 id: 39 expr: 34 succ: 0
+				call max Id: 34 args: 36 parent: 0 succ: 0 <test>:7:10
+					arg 1 id: 36 expr: 35 succ: 38
+						namedValue b id: 35 attr: 0x0 <test>:7:12
+					arg 2 id: 38 expr: 37 succ: 0
+						namedValue c id: 37 attr: 0x0 <test>:7:15
+	= <test>.max (method) parent: <test>
+	== Methods:
+	Method <NoneType> max() id: 11 parent: <test>.max args: 14 body: 19 <test>:1:41
+		Expr id: 14 expr: 13 succ: 17 
+			varDef Int a id: 13 namedValue: 12 value: 0 succ: 0 <test>:2:17
+				namedValue a id: 12 attr: 0x20 <test>:2:17
+		varDef Int rc id: 19 namedValue: 18 value: 20 succ: 21 <test>:3:5
+			namedValue rc id: 18 attr: 0x0 <test>:3:5
+			namedValue a id: 20 attr: 0x0 <test>:3:11
+		If id: 21 condition: 23 then: 28 else: 0 succ: 30<test>:3:13
+			BinOp id: 23 op: < (35) left: 22 right: 24 <test>:4:5
+				namedValue a id: 22 attr: 0x0 <test>:4:5
+				namedValue b id: 24 attr: 0x0 <test>:4:9
+			Expr id: 28 expr: 26 succ: 0 <test>:4:17
+				BinOp id: 26 op: = (1) left: 25 right: 27 <test>:4:17
+					namedValue rc id: 25 attr: 0x0 <test>:4:17
+					namedValue b id: 27 attr: 0x0 <test>:4:20
+		Expr id: 30 expr: 29 succ: 0 <test>:5:3
+			namedValue rc id: 29 attr: 0x0 <test>:5:3
+		= <test>.max.max (method) parent: <test>.max
+		== Variables:
+		varDef Int a id: 13 namedValue: 12 value: 0 succ: 0 <test>:2:17
+			namedValue a id: 12 attr: 0x20 <test>:2:17
+		varDef Int b id: 16 namedValue: 15 value: 0 succ: 0 <test>:2:24
+			namedValue b id: 15 attr: 0x20 <test>:2:24
+		varDef Int rc id: 19 namedValue: 18 value: 20 succ: 21 <test>:3:5
+			namedValue rc id: 18 attr: 0x0 <test>:3:5
+			namedValue a id: 20 attr: 0x0 <test>:3:11
+	== Variables:
+	varDef Int a id: 3 namedValue: 2 value: 0 succ: 0 <test>:1:23
+		namedValue a id: 2 attr: 0x22 <test>:1:23
+	varDef Int b id: 6 namedValue: 5 value: 0 succ: 0 <test>:1:30
+		namedValue b id: 5 attr: 0x20 <test>:1:30
+	varDef Int c id: 9 namedValue: 8 value: 0 succ: 0 <test>:1:37
+		namedValue c id: 8 attr: 0x20 <test>:1:37

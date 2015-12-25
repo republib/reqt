@@ -1,0 +1,22 @@
+const lazy Str s = 'Hi';
+const List l;
+Int i = 3;
+= <test> (module) parent: $global
+== Variables:
+varDef Str s id: 2 namedValue: 1 value: 3 succ: 5 <test>:1:15
+	namedValue s id: 1 attr: 0x12 <test>:1:15
+	const id: 3 value: 'Hi' <test>:1:19
+varDef List l id: 5 namedValue: 4 value: 0 succ: 7 <test>:2:11
+	namedValue l id: 4 attr: 0x2 <test>:2:11
+varDef Int i id: 7 namedValue: 6 value: 8 succ: 0 <test>:3:4
+	namedValue i id: 6 attr: 0x0 <test>:3:4
+	const id: 8 value: 3 <test>:3:8
+== Body:
+varDef Str s id: 2 namedValue: 1 value: 3 succ: 5 <test>:1:15
+	namedValue s id: 1 attr: 0x12 <test>:1:15
+	const id: 3 value: 'Hi' <test>:1:19
+varDef List l id: 5 namedValue: 4 value: 0 succ: 7 <test>:2:11
+	namedValue l id: 4 attr: 0x2 <test>:2:11
+varDef Int i id: 7 namedValue: 6 value: 8 succ: 0 <test>:3:4
+	namedValue i id: 6 attr: 0x0 <test>:3:4
+	const id: 8 value: 3 <test>:3:8

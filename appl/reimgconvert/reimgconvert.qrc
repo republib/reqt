@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/main">
+        <file>icons/action_go.png</file>
+        <file>icons/disk.png</file>
+        <file>icons/door_in.png</file>
+        <file>icons/cancel.png</file>
+        <file>icons/cog_edit.png</file>
+        <file>icons/folder_find.png</file>
+        <file>icons/wrench.png</file>
+        <file>icons/folder_go.png</file>
+        <file>icons/help.png</file>
+    </qresource>
+</RCC>

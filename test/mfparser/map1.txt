@@ -1,0 +1,12 @@
+Map a = {};
+= <test> (module) parent: $global
+== Variables:
+varDef Map a id: 2 namedValue: 1 value: 3 succ: 0 <test>:1:4
+	namedValue a id: 1 attr: 0x0 <test>:1:4
+	mapConst id: 3 <test>:1:8
+	{}
+== Body:
+varDef Map a id: 2 namedValue: 1 value: 3 succ: 0 <test>:1:4
+	namedValue a id: 1 attr: 0x0 <test>:1:4
+	mapConst id: 3 <test>:1:8
+	{}

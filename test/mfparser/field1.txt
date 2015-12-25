@@ -1,0 +1,22 @@
+file.find('*.c')[0].name;
+[1,2,3].join(' ');
+3.14.trunc;
+= <test> (module) parent: $global
+== Body:
+Expr id: 8 expr: 7 succ: 15 <test>:1:24
+	field name id: 7 parent: 5 succ: <test>:1:24
+		indexedValue id: 5 index: 6 parent: 2 <test>:1:16
+			const id: 6 value: 0 <test>:1:17
+			call find Id: 2 args: 4 parent: 1 succ: 0 <test>:1:9
+				arg 1 id: 4 expr: 3 succ: 0
+					const id: 3 value: '*.c' <test>:1:10
+				namedValue file id: 1 attr: 0x0 <test>:1:4
+Expr id: 15 expr: 12 succ: 18 <test>:2:12
+	call join Id: 12 args: 14 parent: 9 succ: 0 <test>:2:12
+		arg 1 id: 14 expr: 13 succ: 0
+			const id: 13 value: ' ' <test>:2:13
+		listConst id: 9 <test>:1:26
+			[1,2,<formula 11>]
+Expr id: 18 expr: 17 succ: 0 <test>:3:10
+	field trunc id: 17 parent: 16 succ: <test>:3:10
+		const id: 16 value: 3.140000 <test>:2:19

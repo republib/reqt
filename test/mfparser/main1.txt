@@ -1,0 +1,26 @@
+Int a=2+3*4;
+func Void main():
+a;
+endf
+= <test> (module) parent: $global
+== Methods:
+Method <NoneType> main() id: 8 parent: <test> args: 0 body: 10 <test>:1:13
+	Expr id: 10 expr: 9 succ: 0 <test>:3:1
+		namedValue a id: 9 attr: 0x0 <test>:3:1
+	= <test>.main (method) parent: <test>
+== Variables:
+varDef Int a id: 2 namedValue: 1 value: 4 succ: 0 <test>:1:4
+	namedValue a id: 1 attr: 0x0 <test>:1:4
+	BinOp id: 4 op: + (17) left: 3 right: 6 <test>:1:7
+		const id: 3 value: 2 <test>:1:6
+		BinOp id: 6 op: * (19) left: 5 right: 7 <test>:1:9
+			const id: 5 value: 3 <test>:1:8
+			const id: 7 value: 4 <test>:1:10
+== Body:
+varDef Int a id: 2 namedValue: 1 value: 4 succ: 0 <test>:1:4
+	namedValue a id: 1 attr: 0x0 <test>:1:4
+	BinOp id: 4 op: + (17) left: 3 right: 6 <test>:1:7
+		const id: 3 value: 2 <test>:1:6
+		BinOp id: 6 op: * (19) left: 5 right: 7 <test>:1:9
+			const id: 5 value: 3 <test>:1:8
+			const id: 7 value: 4 <test>:1:10

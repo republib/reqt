@@ -1,0 +1,40 @@
+Int a;
+Int b;
+a = b = 2;
+if 11 < 12
+then a = 13 * 14
+else a = 15 / 16
+fi
+= <test> (module) parent: $global
+== Variables:
+varDef a id: 2 namedValue: 1 value: 0 succ: 4 <test>:1:4
+	namedValue a id: 1 attr: 0x0 <test>:1:4
+varDef b id: 4 namedValue: 3 value: 0 succ: 10 <test>:2:4
+	namedValue b id: 3 attr: 0x0 <test>:2:4
+== Body:
+varDef a id: 2 namedValue: 1 value: 0 succ: 4 <test>:1:4
+	namedValue a id: 1 attr: 0x0 <test>:1:4
+varDef b id: 4 namedValue: 3 value: 0 succ: 10 <test>:2:4
+	namedValue b id: 3 attr: 0x0 <test>:2:4
+Expr id: 10 expr: 6 succ: 11 <test>:3:2
+	BinOp id: 6 op: = (1) left: 5 right: 8 <test>:3:2
+		namedValue a id: 5 attr: 0x0 <test>:3:2
+		BinOp id: 8 op: = (1) left: 7 right: 9 <test>:3:6
+			namedValue b id: 7 attr: 0x0 <test>:3:6
+			const id: 9 value: 2 <test>:3:8
+If id: 11 condition: 13 then: 20 else: 26 succ: 0<test>:3:11
+	BinOp id: 13 op: < (35) left: 12 right: 14 <test>:4:6
+		const id: 12 value: 11 <test>:4:3
+		const id: 14 value: 12 <test>:4:8
+	Expr id: 20 expr: 16 succ: 0 <test>:5:7
+		BinOp id: 16 op: = (1) left: 15 right: 18 <test>:5:7
+			namedValue a id: 15 attr: 0x0 <test>:5:7
+			BinOp id: 18 op: * (19) left: 17 right: 19 <test>:5:12
+				const id: 17 value: 13 <test>:5:9
+				const id: 19 value: 14 <test>:5:14
+	Expr id: 26 expr: 22 succ: 0 <test>:6:7
+		BinOp id: 22 op: = (1) left: 21 right: 24 <test>:6:7
+			namedValue a id: 21 attr: 0x0 <test>:6:7
+			BinOp id: 24 op: / (20) left: 23 right: 25 <test>:6:12
+				const id: 23 value: 15 <test>:6:9
+				const id: 25 value: 16 <test>:6:14

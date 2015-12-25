@@ -1,0 +1,23 @@
+Int a;
+for b from 10 to 1 step -2 do
+a += 1;
+od
+= <test> (module) parent: $global
+== Variables:
+varDef Int a id: 2 namedValue: 1 value: 0 succ: 5 <test>:1:4
+	namedValue a id: 1 attr: 0x0 <test>:1:4
+varDef Int b id: 4 namedValue: 3 value: 0 succ: 0 <test>:2:4-3:0
+	namedValue b id: 3 attr: 0x40 <test>:2:4
+== Body:
+varDef Int a id: 2 namedValue: 1 value: 0 succ: 5 <test>:1:4
+	namedValue a id: 1 attr: 0x0 <test>:1:4
+forC id: 5 var: 3 from: 6 to: 7 step: 8 body: 13 succ: 0 <test>:1:7
+	namedValue b id: 3 attr: 0x40 <test>:2:4
+	const id: 6 value: 10 <test>:2:11
+	const id: 7 value: 1 <test>:2:17
+	Unary 8 op: - (2) expr: 9 <test>:2:24
+		const id: 9 value: 2 <test>:2:25
+	Expr id: 13 expr: 11 succ: 0 <test>:3:2
+		BinOp id: 11 op: += (2) left: 10 right: 12 <test>:3:2
+			namedValue a id: 10 attr: 0x0 <test>:3:2
+			const id: 12 value: 1 <test>:3:5

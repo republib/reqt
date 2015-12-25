@@ -1,0 +1,19 @@
+Str x;
+if 7 < 6
+then x = '123';
+fi
+= <test> (module) parent: $global
+== Variables:
+varDef x id: 2 namedValue: 1 value: 0 succ: 3 <test>:1:4
+	namedValue x id: 1 attr: 0x0 <test>:1:4
+== Body:
+varDef x id: 2 namedValue: 1 value: 0 succ: 3 <test>:1:4
+	namedValue x id: 1 attr: 0x0 <test>:1:4
+If id: 3 condition: 5 then: 10 else: 0 succ: 0<test>:1:7
+	BinOp id: 5 op: < (35) left: 4 right: 6 <test>:2:5
+		const id: 4 value: 7 <test>:2:3
+		const id: 6 value: 6 <test>:2:7
+	Expr id: 10 expr: 8 succ: 0 <test>:3:7
+		BinOp id: 8 op: = (1) left: 7 right: 9 <test>:3:7
+			namedValue x id: 7 attr: 0x0 <test>:3:7
+			const id: 9 value: '123' <test>:3:9

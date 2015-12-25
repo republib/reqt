@@ -1,0 +1,5 @@
+--delete-empty-lines
+--indent=spaces=3
+-A2
+--align-pointer=type
+--mode=c

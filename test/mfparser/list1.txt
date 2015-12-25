@@ -1,0 +1,12 @@
+List b = [];
+= <test> (module) parent: $global
+== Variables:
+varDef List b id: 2 namedValue: 1 value: 3 succ: 0 <test>:1:5
+	namedValue b id: 1 attr: 0x0 <test>:1:5
+	listConst id: 3 <test>:1:9
+		[]
+== Body:
+varDef List b id: 2 namedValue: 1 value: 3 succ: 0 <test>:1:5
+	namedValue b id: 1 attr: 0x0 <test>:1:5
+	listConst id: 3 <test>:1:9
+		[]

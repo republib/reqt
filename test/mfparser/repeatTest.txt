@@ -1,0 +1,20 @@
+Int a;
+repeat
+a++;
+until a != 2 * 3;
+= <test> (module) parent: $global
+== Variables:
+varDef Int a id: 2 namedValue: 1 value: 0 succ: 3 <test>:1:4
+	namedValue a id: 1 attr: 0x0 <test>:1:4
+== Body:
+varDef Int a id: 2 namedValue: 1 value: 0 succ: 3 <test>:1:4
+	namedValue a id: 1 attr: 0x0 <test>:1:4
+repeat id: 3 condition: 8 body: 6 succ: 0 <test>:1:7
+	BinOp id: 8 op: != (33) left: 7 right: 10 <test>:4:8
+		namedValue a id: 7 attr: 0x0 <test>:4:8
+		BinOp id: 10 op: * (19) left: 9 right: 11 <test>:4:13
+			const id: 9 value: 2 <test>:4:11
+			const id: 11 value: 3 <test>:4:15
+	Expr id: 6 expr: 5 succ: 0 
+		Unary 5 op: ++ (6) expr: 4 
+			namedValue a id: 4 attr: 0x0 <test>:3:1

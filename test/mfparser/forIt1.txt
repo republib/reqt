@@ -1,0 +1,20 @@
+Map a;
+for x in a do
+a += 1;
+od
+= <test> (module) parent: $global
+== Variables:
+varDef Map a id: 2 namedValue: 1 value: 0 succ: 5 <test>:1:4
+	namedValue a id: 1 attr: 0x0 <test>:1:4
+varDef Int x id: 4 namedValue: 3 value: 0 succ: 0 <test>:2:4-3:0
+	namedValue x id: 3 attr: 0x40 <test>:2:4
+== Body:
+varDef Map a id: 2 namedValue: 1 value: 0 succ: 5 <test>:1:4
+	namedValue a id: 1 attr: 0x0 <test>:1:4
+forIt id: 5 var: 3 set: 6 body: 10 succ: 0 <test>:1:7
+	namedValue x id: 3 attr: 0x40 <test>:2:4
+	namedValue a id: 6 attr: 0x0 <test>:2:11
+	Expr id: 10 expr: 8 succ: 0 <test>:3:2
+		BinOp id: 8 op: += (2) left: 7 right: 9 <test>:3:2
+			namedValue a id: 7 attr: 0x0 <test>:3:2
+			const id: 9 value: 1 <test>:3:5

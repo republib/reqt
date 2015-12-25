@@ -1,0 +1,36 @@
+func Int fac(const Int n):
+Int rc; if rc <= 1 then rc = 1 else rc = n*fac(n-1) fi
+rc endf
+= <test> (module) parent: $global
+== Methods:
+Method <NoneType> fac() id: 1 parent: <test> args: 3 body: 5 <test>:0:55
+	varDef Int n id: 3 namedValue: 2 value: 0 succ: 0 <test>:1:23
+		namedValue n id: 2 attr: 0x22 <test>:1:23
+	varDef Int rc id: 5 namedValue: 4 value: 0 succ: 6 <test>:2:4
+		namedValue rc id: 4 attr: 0x0 <test>:2:4
+	If id: 6 condition: 8 then: 13 else: 23 succ: 25<test>:2:8
+		BinOp id: 8 op: <= (34) left: 7 right: 9 <test>:2:14
+			namedValue rc id: 7 attr: 0x0 <test>:2:14
+			const id: 9 value: 1 <test>:2:17
+		Expr id: 13 expr: 11 succ: 0 <test>:2:27
+			BinOp id: 11 op: = (1) left: 10 right: 12 <test>:2:27
+				namedValue rc id: 10 attr: 0x0 <test>:2:27
+				const id: 12 value: 1 <test>:2:29
+		Expr id: 23 expr: 15 succ: 0 <test>:2:39
+			BinOp id: 15 op: = (1) left: 14 right: 17 <test>:2:39
+				namedValue rc id: 14 attr: 0x0 <test>:2:39
+				BinOp id: 17 op: * (19) left: 16 right: 18 <test>:2:42
+					namedValue n id: 16 attr: 0x0 <test>:2:42
+					call fac Id: 18 args: 22 parent: 0 succ: 0 <test>:2:46
+						Expr id: 22 expr: 20 succ: 0 <test>:2:48
+							BinOp id: 20 op: - (18) left: 19 right: 21 <test>:2:48
+								namedValue n id: 19 attr: 0x0 <test>:2:48
+								const id: 21 value: 1 <test>:2:49
+	Expr id: 25 expr: 24 succ: 0 <test>:3:3
+		namedValue rc id: 24 attr: 0x0 <test>:3:3
+	= <test>.fac (method) parent: <test>
+	== Variables:
+	varDef Int n id: 3 namedValue: 2 value: 0 succ: 0 <test>:1:23
+		namedValue n id: 2 attr: 0x22 <test>:1:23
+	varDef Int rc id: 5 namedValue: 4 value: 0 succ: 6 <test>:2:4
+		namedValue rc id: 4 attr: 0x0 <test>:2:4
